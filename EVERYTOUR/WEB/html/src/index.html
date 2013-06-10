@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ODSJ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  
+  <!-- Bootstrap -->
+  <link href="/static/css/bootstrap.css" rel="stylesheet" media="screen">
+  <!-- Loading Flat UI -->
+  <link href="/static/css/flat-ui.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/static/images/favicon.ico">
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+  <!--[if lt IE 9]>
+    <script src="/static/js/html5shiv.js"></script>
+  <![endif]-->
+    <script type="text/javascript" src="/static/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                type: 'line',
+                marginRight: 130,
+                marginBottom: 50
+            },
+            title: {
+                text: 'Monthly Average Temperature',
+                x: -20 //center
+            },
+
+            xAxis: {
+                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+                    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            },
+            yAxis: {
+                title: {
+                    text: 'Temperature'
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+            tooltip: {
+                valueSuffix: 'c'
+            },
+            legend: {
+                layout: 'horizontal',
+                align: 'center',
+                verticalAlign: 'bottom',
+                x: 0,
+                y: 0,
+                borderWidth: 0
+            },
+            series: [{
+                name: 'Tokyo',
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            }, {
+                name: 'New York',
+                data: [-0.2, 0.8, 5.7, 11.3, 17.0, 22.0, 24.8, 24.1, 20.1, 14.1, 8.6, 2.5]
+            }, {
+                name: 'Berlin',
+                data: [-0.9, 0.6, 3.5, 8.4, 13.5, 17.0, 18.6, 17.9, 14.3, 9.0, 3.9, 1.0]
+            }, {
+                name: 'London',
+                data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+            }]
+        });
+    });
+    
+
+		</script>
+</head>
+<body>
+    <div class="container">
+      <h3 class="title">HP SA REPORT</h3>
+      <div class="row">
+        <div class="span9">
+          <div class="navbar navbar-inverse">
+            <div class="navbar-inner">
+              <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <div class="nav-collapse collapse">
+                  <ul class="nav">
+                    <li>
+                      <a href="#">
+                        HOME
+                        
+                      </a>
+                    </li>
+                    <!-- <li class="active"> -->
+                    <li>
+                      <a href="#">
+                        SEARCH
+                      </a>
+                      <ul>
+                        <li><a href="#">SERVER LIST</a></li>
+                        <!--
+                        <li>
+                          <a href="#">Sub menu</a>
+                          <ul>
+                            <li><a href="#">Element One</a></li>
+                            <li><a href="#">Element Two</a></li>
+                            <li><a href="#">Element Three</a></li>
+                          </ul> <!-- /Sub menu -->
+                        <!-- </li> -->
+                        <li><a href="#">SOFTWARE LIST</a></li>
+                      </ul> <!-- /Sub menu -->
+                    </li>
+                    <li>
+                      <a href="#">
+                        About Us
+                        <span class="navbar-unread">1</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div><!--/.nav-collapse -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <select value="SA" class="span3" tabindex="1" name="herolist">
+            <option value="SA">SA</option>
+            <option value="ITOSS">ITOSS</option>
+            <option value="UHUB">UHUB</option>
+            <option value="CTOSS">CTOSS</option>
+          </select>
+        </div>
+      </div> <!-- /row -->
+      <div class="row">
+      <div class="span4">        
+      <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>OS</th>
+                  <th>Servers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>HP-UX</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>AIX</td>
+                  <td>50</td>
+                </tr>
+                 <tr>
+                  <td>SUNOS</td>
+                  <td>300</td>
+                </tr>
+                <tr>
+                  <td>LINUX</td>
+                  <td>900</td>
+                </tr>
+               <tr>
+                  <td>WINDOWS</td>
+                  <td>900</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+      <div class="span4">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Status</th>
+                  <th>Servers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>OK</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Not OK</td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+        </table>
+        
+        <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Assign</th>
+                  <th>Servers</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Assigned</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Not Assigned</td>
+                  <td>50</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+            <div class="span4">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Satellite</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>SDSE</td>
+                  <td>OK</td>
+                </tr>
+                <tr>
+                  <td>SDSA</td>
+                  <td>OK</td>
+                </tr>
+                <tr>
+                  <td>SDSG</td>
+                  <td>OK</td>
+                </tr>
+                <tr>
+                  <td>SDSAP</td>
+                  <td>OK</td>
+                </tr>
+                <tr>
+                  <td>SDSC</td>
+                  <td>OK</td>
+                </tr>
+              </tbody>
+        </table>
+      </div>
+      </div> <!-- END ROW -->
+      <div class="row">
+        <div class="span6"> 
+        <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>CUSTOMER</th>
+                  <th>Reachable</th>
+                  <th>NOT Reachable</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>CARD</td>
+                  <td>500</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>LIFE</td>
+                  <td>500</td>
+                  <td>200</td>
+                </tr>
+              </tbody>
+        </table>
+        </div>
+        <div class="span6"> 
+                <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                </tr>
+              </tbody>
+        </table>
+        </div>
+      </div> <!-- END Row -->
+      <div class="span12">
+      <div id="container" style="min-width: 400px; height: 300px; margin: 0 auto"></div>
+      </div>
+   </div>
+   <!-- Le javascript
+   ================================================== -->
+   <!-- Placed at the end of the document so the pages load faster -->
+   <script src="/static/js/jquery-1.9.1.min.js"></script>
+   <script src="/static/js/bootstrap.min.js"></script>
+   <!-- Load JS here for greater good =============================-->
+   <script src="/static/js/jquery-ui-1.10.0.custom.min.js"></script>
+   <script src="/static/js/jquery.dropkick-1.0.0.js"></script>
+   <script src="/static/js/custom_checkbox_and_radio.js"></script>
+   <script src="/static/js/custom_radio.js"></script>
+   <script src="/static/js/jquery.tagsinput.js"></script>
+   <script src="/static/js/bootstrap-tooltip.js"></script>
+   <script src="/static/js/jquery.placeholder.js"></script>
+   <script src="/static/js/highcharts.js"></script>
+   <script src="/static/js/modules/exporting.js"></script>
+   <!-- <script src="http://vjs.zencdn.net/c/video.js"></script> -->
+   <script src="/static/js/application.js"></script>
+   <!--[if lt IE 8]>
+     <script src="/static/js/icon-font-ie7.js"></script>
+     <script src="/static/js/icon-font-ie7-24.js"></script>
+   <![endif]-->
+   <!-- /container -->
+  </body>
+</html>
