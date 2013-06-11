@@ -62,7 +62,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = '/home/nijin39/DEV/everytour/EVERYTOUR/WEB'
+STATIC_ROOT = '/root/DEV/everytour/EVERYTOUR/WEB'
 
 
 # URL prefix for static files.
@@ -74,9 +74,9 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    ('css', '/home/nijin39/DEV/everytour/EVERYTOUR/WEB/css'),
-    ('js', '/home/nijin39/DEV/everytour/EVERYTOUR/WEB/js'),
-    ('img', '/home/nijin39/DEV/everytour/EVERYTOUR/WEB/img'),
+    ('css', '/root/DEV/everytour/EVERYTOUR/WEB/css'),
+    ('js', '/root/DEV/everytour/EVERYTOUR/WEB/js'),
+    ('img', '/root/DEV/everytour/EVERYTOUR/WEB/img'),
 )
 
 # List of finder classes that know how to find static files in
@@ -116,7 +116,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    '/home/nijin39/DEV/everytour/EVERYTOUR/WEB/html'
+    '/root/DEV/everytour/EVERYTOUR/WEB/html'
 
 )
 
