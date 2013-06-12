@@ -17,7 +17,7 @@ from django.contrib.auth.decorators import login_required
  
 @login_required
 def index(request):
-    t=loader.get_template('home.html')
+    t=loader.get_template('index.html')
     print_result='cc'
     c=Context({
         #'client_dirs' : client_dirs,
